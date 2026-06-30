@@ -4,9 +4,9 @@ public class ItemBazar extends Produto {
 
     private String categoria;
 
-    public ItemBazar(int id, String nome, double preco, String categoria) {
-        super(id, nome, preco);
-        this.categoria = categoria;
+    // ✔ IMPORTANTE: construtor vazio (OBRIGATÓRIO)
+    public ItemBazar() {
+        super();
     }
 
     public String getCategoria() {

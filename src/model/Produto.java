@@ -6,12 +6,18 @@ public abstract class Produto {
     protected String nome;
     protected double preco;
 
+    // ✔ IMPORTANTE: construtor vazio (OBRIGATÓRIO)
+    public Produto() {
+    }
+
+    // construtor padrão
     public Produto(int id, String nome, double preco) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
     }
 
+    // getters e setters
     public int getId() {
         return id;
     }
@@ -36,6 +42,7 @@ public abstract class Produto {
         this.preco = preco;
     }
 
+    // método de exibição
     public void visualizar() {
         System.out.println("\n===== PRODUTO =====");
         System.out.println("ID: " + id);

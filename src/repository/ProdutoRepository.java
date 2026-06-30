@@ -4,14 +4,14 @@ import model.Produto;
 
 public interface ProdutoRepository {
 	
-	public void listarTodos();
+	 void listarTodos();
 	
-	public void procurarPorId(int id);
+	 void procurarPorId(int id);
 	
-	public void cadastrar(Produto produto);
+	 void cadastrar(Produto produto);
 	
-	public void atualizar(Produto produto);
+	 void atualizar(Produto produto);
 	
-	public void deletar(int id);
+	 void deletar(int id);
 
 }
