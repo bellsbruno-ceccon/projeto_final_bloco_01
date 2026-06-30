@@ -1,5 +1,6 @@
 package application;
 
+import java.io.IOException;
 import java.util.Scanner;
 import controller.ProdutoController;
 import model.ItemBazar;
@@ -109,5 +110,32 @@ public class Menu {
         } while (opcao != 0);
 
         sc.close();
+    }
+
+    public static void sobre() {
+
+        System.out.println("\n*****************************************************");
+        System.out.println("              BAZAR MARIETA DUTRA");
+        System.out.println("*****************************************************");
+        System.out.println("Sistema de Gerenciamento de Produtos.");
+        System.out.println("Este projeto foi desenvolvido em Java");
+        System.out.println("para auxiliar o controle de produtos");
+        System.out.println("de um bazar comunitário.");
+        System.out.println("Categorias cadastradas:");
+        System.out.println("- Livros");
+        System.out.println("- Artesanato");
+        System.out.println("- Itens de Bazar");
+        System.out.println("Desenvolvido como Projeto Final do Bloco 01 - Java.");
+        System.out.println("*****************************************************");
+    }
+
+    public static void keyPress() {
+
+        try {
+            System.out.println("\nPressione ENTER para continuar...");
+            System.in.read();
+        } catch (IOException e) {
+            System.out.println("Erro ao aguardar a tecla ENTER.");
+        }
     }
 }
